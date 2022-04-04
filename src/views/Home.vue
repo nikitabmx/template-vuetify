@@ -1,15 +1,15 @@
 <template>
-  <hello-world />
+  <div>
+    <button>Click me</button>
+  </div>
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
-
   export default {
     name: 'Home',
 
-    components: {
-      HelloWorld,
-    },
+    mounted() {
+      
+    }
   }
 </script>
