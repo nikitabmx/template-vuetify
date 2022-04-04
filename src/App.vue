@@ -1,39 +1,29 @@
 <template>
-  <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <v-toolbar-items class="hidden-xs-only">
-        <v-btn
-          col4
-          to="/"
-        >
-          Home
-        </v-btn>
-        <v-btn
-          col4
-          to="/about"
-        >
-          About
-        </v-btn>
-		</v-toolbar-items>
-    </v-app-bar>
-
-    <v-main>
-      <router-view/>
-    </v-main>
-  </v-app>
+	<div id="app">
+		<nav>
+			<router-link to="/">Home</router-link>
+			<router-link to="/about">About</router-link>
+		</nav>
+		<div>
+			<router-view></router-view>
+		</div>
+	</div>
 </template>
 
 <script>
-
 export default {
-  name: 'App',
-
-  data: () => ({
-    //
-  }),
+	name: 'App',
 };
 </script>
+
+<style scoped>
+nav {
+	display: flex;
+	flex-direction: row nowrap;
+	gap: 16px;
+	padding: 16px;
+	color: black;
+	font-size: 20px;
+}
+
+</style>
