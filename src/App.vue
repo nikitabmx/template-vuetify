@@ -1,12 +1,14 @@
 <template>
 	<div id="app">
-		<nav>
-			<router-link to="/">Home</router-link>
-			<router-link to="/about">About</router-link>
-		</nav>
-		<div>
-			<router-view></router-view>
-		</div>
+		<v-app id="inspire">
+			<v-main>
+				<v-container fluid fill-height>
+					<v-layout justify-center align-center>
+						<router-view></router-view>
+					</v-layout>
+				</v-container>
+			</v-main>
+		</v-app>
 	</div>
 </template>
 
@@ -25,5 +27,4 @@ nav {
 	color: black;
 	font-size: 20px;
 }
-
 </style>
